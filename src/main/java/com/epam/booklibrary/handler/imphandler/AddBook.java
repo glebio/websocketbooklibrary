@@ -1,14 +1,15 @@
-package com.epam.handler.imphandler;
+package com.epam.booklibrary.handler.imphandler;
 
 import java.io.IOException;
 
-import com.epam.Store;
-import com.epam.constants.ResponseConstants;
-import com.epam.handler.IHandle;
-import com.epam.method.Request;
-import com.epam.method.Response;
-import com.epam.model.BookPojo;
-import com.epam.utils.jackson.JsonUtils;
+
+import com.epam.booklibrary.StoreOfBook;
+import com.epam.booklibrary.handler.IHandle;
+import com.epam.booklibrary.method.Request;
+import com.epam.booklibrary.method.Response;
+import com.epam.booklibrary.model.BookPojo;
+import com.epam.booklibrary.constants.ResponseConstants;
+import com.epam.booklibrary.utils.jackson.JsonUtils;
 
 public class AddBook implements IHandle {
 
@@ -25,7 +26,7 @@ public class AddBook implements IHandle {
 		}
 
 		if (isMap) {
-			Store.addBook(bookCreate.getBook());
+			StoreOfBook.addBook(bookCreate.getBook());
 			rp.setStatusCode(ResponseConstants.STATUS_CODE_201_CREATED);
 		}
 

@@ -1,4 +1,4 @@
-package com.epam.handler;
+package com.epam.booklibrary.handler;
 
 public class Handler {
 

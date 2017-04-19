@@ -1,12 +1,12 @@
-package com.epam.method;
+package com.epam.booklibrary.method;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.util.List;
 
-import com.epam.constants.CommonConstants;
-import com.epam.utils.HttpMethodUtils;
-import com.epam.utils.SplitUtils;
+import com.epam.booklibrary.constants.CommonConstants;
+import com.epam.booklibrary.utils.HttpMethodUtils;
+import com.epam.booklibrary.utils.SplitUtils;
 
 public class Request {
 

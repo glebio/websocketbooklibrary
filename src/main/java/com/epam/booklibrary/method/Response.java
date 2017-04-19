@@ -1,12 +1,13 @@
-package com.epam.method;
+package com.epam.booklibrary.method;
 
 import java.io.IOException;
 import java.io.OutputStream;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-import com.epam.constants.CommonConstants;
-import com.epam.constants.ResponseConstants;
+import com.epam.booklibrary.constants.CommonConstants;
+import com.epam.booklibrary.constants.ResponseConstants;
+
 
 public class Response {
 

@@ -1,9 +1,9 @@
-package com.epam.handler;
+package com.epam.booklibrary.handler;
 
 import java.io.IOException;
 
-import com.epam.method.Request;
-import com.epam.method.Response;
+import com.epam.booklibrary.method.Request;
+import com.epam.booklibrary.method.Response;
 
 public interface IHandle {
 

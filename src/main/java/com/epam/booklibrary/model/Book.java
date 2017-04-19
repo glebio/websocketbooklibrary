@@ -8,7 +8,7 @@ import javax.xml.bind.annotation.XmlType;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-@XmlType(name = "Book", propOrder = { "id", "titleOfBook", "edition", "authorOfBook", "dateOfBook"})
+@XmlType(name = "Book", propOrder = {"id", "titleOfBook", "authorOfBook", "dateOfBook"})
 @XmlAccessorType(XmlAccessType.NONE)
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Book {
@@ -33,43 +33,42 @@ public class Book {
     }
 
     public Book(int id, String titleOfBook, String authorOfBook, String dateOfBook) {
-	this.id = id;
-	this.titleOfBook = titleOfBook;
-	this.authorOfBook = authorOfBook;
-	this.dateOfBook = dateOfBook;
+        this.id = id;
+        this.titleOfBook = titleOfBook;
+        this.authorOfBook = authorOfBook;
+        this.dateOfBook = dateOfBook;
     }
 
     public int getId() {
-	return id;
+        return id;
     }
 
     public void setId(int id) {
-	this.id = id;
+        this.id = id;
     }
 
     public String getTitleOfBook() {
-	return titleOfBook;
+        return titleOfBook;
     }
 
     public void setTitleOfBook(String titleOfBook) {
-	this.titleOfBook = titleOfBook;
+        this.titleOfBook = titleOfBook;
     }
 
-
     public String getAuthorOfBook() {
-	return authorOfBook;
+        return authorOfBook;
     }
 
     public void setAuthorOfBook(String authorOfBook) {
-	this.authorOfBook = authorOfBook;
+        this.authorOfBook = authorOfBook;
     }
 
     public String getDateOfBook() {
-	return dateOfBook;
+        return dateOfBook;
     }
 
     public void setDateOfBook(String dateOfBook) {
-	this.dateOfBook = dateOfBook;
+        this.dateOfBook = dateOfBook;
     }
 
 }

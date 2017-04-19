@@ -1,4 +1,4 @@
-package com.epam.handler.imphandler;
+package com.epam.booklibrary.handler.imphandler;
 
 import java.io.IOException;
 import java.io.StringWriter;
@@ -6,16 +6,16 @@ import java.util.List;
 
 import javax.xml.bind.JAXBException;
 
-import com.epam.Store;
-import com.epam.constants.CommonConstants;
-import com.epam.constants.ResponseConstants;
-import com.epam.handler.IHandle;
-import com.epam.method.Request;
-import com.epam.method.Response;
-import com.epam.model.Book;
-import com.epam.model.BooksPojo;
-import com.epam.utils.jackson.JsonUtils;
-import com.epam.utils.marshaller.MarshallerHelper;
+import com.epam.booklibrary.StoreOfBook;
+import com.epam.booklibrary.constants.CommonConstants;
+import com.epam.booklibrary.constants.ResponseConstants;
+import com.epam.booklibrary.handler.IHandle;
+import com.epam.booklibrary.method.Request;
+import com.epam.booklibrary.method.Response;
+import com.epam.booklibrary.model.Book;
+import com.epam.booklibrary.model.BooksPojo;
+import com.epam.booklibrary.utils.jackson.JsonUtils;
+import com.epam.booklibrary.utils.marshaller.MarshallerHelper;
 
 public class GetAllBooks implements IHandle {
 
@@ -31,7 +31,7 @@ public class GetAllBooks implements IHandle {
 
     private void response(Request rq, Response rp, String acceptType) throws JAXBException {
 	String body = "";
-	List<Book> books = Store.getAllBook();
+	List<Book> books = StoreOfBook.getAllBook();
 
 	rp.setVersion(rq.getVersion());
 	rp.setStatusCode(ResponseConstants.STATUS_CODE_200_OK);

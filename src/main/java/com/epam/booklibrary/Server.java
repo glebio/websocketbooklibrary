@@ -10,12 +10,15 @@ import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-import com.epam.handler.Handler;
-import com.epam.handler.IHandle;
-import com.epam.handler.imphandler.DefHandler;
-import com.epam.method.Request;
-import com.epam.method.Response;
-import com.epam.utils.MatcherUtils;
+import com.epam.booklibrary.handler.Handler;
+import com.epam.booklibrary.method.Request;
+import com.epam.booklibrary.utils.MatcherUtils;
+import com.epam.booklibrary.handler.Handler;
+import com.epam.booklibrary.handler.IHandle;
+import com.epam.booklibrary.handler.imphandler.DefHandler;
+
+import com.epam.booklibrary.method.Response;
+
 
 public class Server {
 

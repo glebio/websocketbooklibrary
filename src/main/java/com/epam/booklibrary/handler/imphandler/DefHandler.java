@@ -1,8 +1,9 @@
-package com.epam.handler.imphandler;
+package com.epam.booklibrary.handler.imphandler;
 
-import com.epam.handler.IHandle;
-import com.epam.method.Request;
-import com.epam.method.Response;
+import com.epam.booklibrary.handler.IHandle;
+import com.epam.booklibrary.method.Request;
+import com.epam.booklibrary.method.Response;
+
 
 public class DefHandler implements IHandle {
 
